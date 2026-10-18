@@ -202,6 +202,36 @@
                 </section>
                 <p class="claim-status" id="claim-status" role="status" aria-live="polite">Complete tasks to add credits to your balance.</p>
                 <p class="claim-note">Task completion is self-reported and stored in this browser only. Survey answers stay on this device; they are not sent to a server.</p>
+
+                <section class="exchange-panel" aria-labelledby="exchange-title">
+                    <div class="exchange-heading">
+                        <div>
+                            <p class="eyebrow">use your rewards</p>
+                            <h2 id="exchange-title">Exchange credits</h2>
+                        </div>
+                        <span class="exchange-rate">100 credits = $1.00</span>
+                    </div>
+                    <div class="exchange-balances">
+                        <div>
+                            <span>Available credits</span>
+                            <strong id="exchange-available">0</strong>
+                        </div>
+                        <div>
+                            <span>In-app dollar balance</span>
+                            <strong id="cash-balance">$0.00</strong>
+                        </div>
+                    </div>
+                    <form id="exchange-form" class="exchange-form">
+                        <label for="exchange-dollars">Exchange whole dollars</label>
+                        <div class="exchange-controls">
+                            <input id="exchange-dollars" name="dollars" type="number" min="1" step="1" value="1" inputmode="numeric" required>
+                            <span id="exchange-preview">Uses 100 credits</span>
+                            <button class="exchange-btn" type="submit" disabled>Exchange</button>
+                        </div>
+                    </form>
+                    <p class="exchange-status" id="exchange-status" role="status" aria-live="polite">Exchange credits into an in-app balance.</p>
+                    <p class="exchange-note">Demo only: this is not real money and cannot be withdrawn or paid out. Balances are stored in this browser.</p>
+                </section>
             </div>
 
             <div class="visual-panel">

@@ -376,6 +376,134 @@ h2 {
     line-height: 1.5;
 }
 
+.exchange-panel {
+    display: grid;
+    gap: 14px;
+    margin-top: 24px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(40, 215, 179, 0.08), rgba(124, 92, 255, 0.09));
+}
+
+.exchange-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.exchange-heading .eyebrow {
+    margin-bottom: 7px;
+}
+
+.exchange-rate {
+    padding: 8px 11px;
+    border: 1px solid rgba(255, 209, 102, 0.22);
+    border-radius: 999px;
+    color: var(--gold);
+    font-size: 0.83rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.exchange-balances {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.exchange-balances > div {
+    display: grid;
+    gap: 5px;
+    padding: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 14px;
+    background: rgba(6, 8, 22, 0.25);
+}
+
+.exchange-balances span,
+.exchange-form label {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.exchange-balances strong {
+    font-size: 1.2rem;
+}
+
+.exchange-form {
+    display: grid;
+    gap: 8px;
+}
+
+.exchange-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.exchange-controls input {
+    width: 92px;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 11px;
+    background: rgba(6, 8, 22, 0.42);
+    color: var(--text);
+    font: inherit;
+}
+
+.exchange-controls input:focus-visible,
+.exchange-btn:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+#exchange-preview {
+    flex: 1;
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.exchange-btn {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 11px;
+    background: linear-gradient(135deg, var(--secondary), #74efc9);
+    color: #071a1b;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.exchange-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+.exchange-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+.exchange-status {
+    min-height: 1.3em;
+    color: var(--secondary);
+    font-size: 0.86rem;
+    font-weight: 600;
+}
+
+.exchange-status[data-state="error"] {
+    color: #ffaaa2;
+}
+
+.exchange-note {
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
 .visual-panel {
     position: relative;
     min-height: 480px;
