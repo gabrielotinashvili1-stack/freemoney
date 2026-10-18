@@ -255,6 +255,61 @@ h2 {
     outline-offset: 3px;
 }
 
+.survey-form {
+    display: grid;
+    justify-items: start;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.survey-form fieldset {
+    min-width: 0;
+    border: 0;
+}
+
+.survey-form legend {
+    margin-bottom: 6px;
+    color: var(--muted);
+    font-size: 0.76rem;
+}
+
+.survey-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.survey-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 9px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    color: var(--text);
+    font-size: 0.76rem;
+    cursor: pointer;
+}
+
+.survey-options label:has(input:checked) {
+    border-color: rgba(40, 215, 179, 0.55);
+    background: rgba(40, 215, 179, 0.1);
+}
+
+.survey-options input {
+    accent-color: var(--secondary);
+}
+
+.survey-options input:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+}
+
+.survey-card .task-action {
+    align-self: start;
+    padding-top: 2px;
+}
+
 .task-action {
     display: grid;
     justify-items: end;

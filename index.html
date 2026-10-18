@@ -28,7 +28,7 @@
                             <p class="eyebrow">earn rewards</p>
                             <h2 id="tasks-title">Tasks to do</h2>
                         </div>
-                        <span class="tasks-total" id="tasks-total">0 / 3 done</span>
+                        <span class="tasks-total" id="tasks-total">0 / 11 done</span>
                     </div>
 
                     <article class="task-card" data-task="subscribe">
@@ -36,7 +36,7 @@
                         <div class="task-info">
                             <h3>Subscribe to the channel</h3>
                             <p>Visit our YouTube channel and subscribe.</p>
-                            <a class="task-link" id="subscribe-link" href="https://www.youtube.com/@DEVELOPSAND_CHEATS" target="_blank" rel="noreferrer">Open YouTube</a>
+                            <a class="task-link" data-visit-task="subscribe" href="https://www.youtube.com/@DEVELOPSAND_CHEATS" target="_blank" rel="noreferrer">Open YouTube</a>
                         </div>
                         <div class="task-action">
                             <span class="task-reward">+10 credits</span>
@@ -49,11 +49,76 @@
                         <div class="task-info">
                             <h3>Watch a channel video</h3>
                             <p>Choose and watch a video from the channel.</p>
-                            <a class="task-link" id="watch-link" href="https://www.youtube.com/@DEVELOPSAND_CHEATS" target="_blank" rel="noreferrer">Browse videos</a>
+                            <a class="task-link" data-visit-task="watch" href="https://www.youtube.com/@DEVELOPSAND_CHEATS/videos" target="_blank" rel="noreferrer">Browse videos</a>
                         </div>
                         <div class="task-action">
                             <span class="task-reward">+5 credits</span>
                             <button class="claim-btn" data-claim="watch" type="button" disabled>Claim</button>
+                        </div>
+                    </article>
+
+                    <article class="task-card" data-task="watch-second">
+                        <div class="task-icon" aria-hidden="true">▷</div>
+                        <div class="task-info">
+                            <h3>Watch another video</h3>
+                            <p>Pick another upload from the channel.</p>
+                            <a class="task-link" data-visit-task="watch-second" href="https://www.youtube.com/@DEVELOPSAND_CHEATS/videos" target="_blank" rel="noreferrer">See all videos</a>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+5 credits</span>
+                            <button class="claim-btn" data-claim="watch-second" type="button" disabled>Claim</button>
+                        </div>
+                    </article>
+
+                    <article class="task-card" data-task="watch-short">
+                        <div class="task-icon" aria-hidden="true">▻</div>
+                        <div class="task-info">
+                            <h3>Watch a Short</h3>
+                            <p>Check out a short video from the channel.</p>
+                            <a class="task-link" data-visit-task="watch-short" href="https://www.youtube.com/@DEVELOPSAND_CHEATS/shorts" target="_blank" rel="noreferrer">Browse Shorts</a>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+3 credits</span>
+                            <button class="claim-btn" data-claim="watch-short" type="button" disabled>Claim</button>
+                        </div>
+                    </article>
+
+                    <article class="task-card" data-task="playlists">
+                        <div class="task-icon" aria-hidden="true">▤</div>
+                        <div class="task-info">
+                            <h3>Explore the playlists</h3>
+                            <p>Find a playlist that interests you.</p>
+                            <a class="task-link" data-visit-task="playlists" href="https://www.youtube.com/@DEVELOPSAND_CHEATS/playlists" target="_blank" rel="noreferrer">Browse playlists</a>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+2 credits</span>
+                            <button class="claim-btn" data-claim="playlists" type="button" disabled>Claim</button>
+                        </div>
+                    </article>
+
+                    <article class="task-card" data-task="uploads">
+                        <div class="task-icon" aria-hidden="true">↗</div>
+                        <div class="task-info">
+                            <h3>Check recent uploads</h3>
+                            <p>Catch up on the channel's latest videos.</p>
+                            <a class="task-link" data-visit-task="uploads" href="https://www.youtube.com/@DEVELOPSAND_CHEATS/videos" target="_blank" rel="noreferrer">See recent uploads</a>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+2 credits</span>
+                            <button class="claim-btn" data-claim="uploads" type="button" disabled>Claim</button>
+                        </div>
+                    </article>
+
+                    <article class="task-card" data-task="community">
+                        <div class="task-icon" aria-hidden="true">✦</div>
+                        <div class="task-info">
+                            <h3>Visit the community</h3>
+                            <p>See what's new in the channel community.</p>
+                            <a class="task-link" data-visit-task="community" href="https://www.youtube.com/@DEVELOPSAND_CHEATS/community" target="_blank" rel="noreferrer">Open community</a>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+2 credits</span>
+                            <button class="claim-btn" data-claim="community" type="button" disabled>Claim</button>
                         </div>
                     </article>
 
@@ -68,17 +133,83 @@
                             <button class="claim-btn" data-claim="checkin" type="button">Claim</button>
                         </div>
                     </article>
+
+                    <article class="task-card survey-card" data-task="survey-topic">
+                        <div class="task-icon" aria-hidden="true">?</div>
+                        <div class="task-info">
+                            <h3>Quick survey: video topics</h3>
+                            <p>What would you like to see next?</p>
+                            <form class="survey-form" data-survey="survey-topic">
+                                <fieldset>
+                                    <legend>Choose one</legend>
+                                    <div class="survey-options">
+                                        <label><input type="radio" name="topic" value="tutorials" required> Tutorials</label>
+                                        <label><input type="radio" name="topic" value="tips" required> Tips &amp; tricks</label>
+                                        <label><input type="radio" name="topic" value="behind-scenes" required> Behind the scenes</label>
+                                    </div>
+                                </fieldset>
+                                <button class="claim-btn" data-claim="survey-topic" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+4 credits</span>
+                        </div>
+                    </article>
+
+                    <article class="task-card survey-card" data-task="survey-format">
+                        <div class="task-icon" aria-hidden="true">?</div>
+                        <div class="task-info">
+                            <h3>Quick survey: video format</h3>
+                            <p>Which format do you enjoy most?</p>
+                            <form class="survey-form" data-survey="survey-format">
+                                <fieldset>
+                                    <legend>Choose one</legend>
+                                    <div class="survey-options">
+                                        <label><input type="radio" name="format" value="shorts" required> Short videos</label>
+                                        <label><input type="radio" name="format" value="guides" required> Step-by-step guides</label>
+                                        <label><input type="radio" name="format" value="livestreams" required> Live streams</label>
+                                    </div>
+                                </fieldset>
+                                <button class="claim-btn" data-claim="survey-format" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+4 credits</span>
+                        </div>
+                    </article>
+
+                    <article class="task-card survey-card" data-task="survey-site">
+                        <div class="task-icon" aria-hidden="true">?</div>
+                        <div class="task-info">
+                            <h3>Quick survey: this site</h3>
+                            <p>How is your experience so far?</p>
+                            <form class="survey-form" data-survey="survey-site">
+                                <fieldset>
+                                    <legend>Choose one</legend>
+                                    <div class="survey-options">
+                                        <label><input type="radio" name="site" value="great" required> Great</label>
+                                        <label><input type="radio" name="site" value="okay" required> It's okay</label>
+                                        <label><input type="radio" name="site" value="improve" required> Needs work</label>
+                                    </div>
+                                </fieldset>
+                                <button class="claim-btn" data-claim="survey-site" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+4 credits</span>
+                        </div>
+                    </article>
                 </section>
                 <p class="claim-status" id="claim-status" role="status" aria-live="polite">Complete tasks to add credits to your balance.</p>
-                <p class="claim-note">Task completion is self-reported and stored in this browser only. It cannot verify subscriptions or watched videos.</p>
+                <p class="claim-note">Task completion is self-reported and stored in this browser only. Survey answers stay on this device; they are not sent to a server.</p>
             </div>
 
-            <div class="visual-panel" aria-hidden="true">
-                <div class="orb orb-one"></div>
-                <div class="orb orb-two"></div>
-                <div class="credit-card">
-                    <div class="chip"></div>
-                    <div class="card-lines">
+            <div class="visual-panel">
+                <div class="orb orb-one" aria-hidden="true"></div>
+                <div class="orb orb-two" aria-hidden="true"></div>
+                <div class="credit-card" role="group" aria-label="Your credit balance">
+                    <div class="chip" aria-hidden="true"></div>
+                    <div class="card-lines" aria-hidden="true">
                         <span></span>
                         <span></span>
                     </div>
