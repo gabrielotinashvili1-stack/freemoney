@@ -20,29 +20,57 @@
             <div class="content-block">
                 <p class="eyebrow">instant rewards • no friction</p>
                 <h1>Unlock <span>10 free credits</span> and start earning smarter.</h1>
-                <p class="subtitle">A cleaner way to get rewarded. Tap in, subscribe, and claim your bonus in seconds.</p>
+                <p class="subtitle">Complete simple tasks to earn credits. Your balance and task progress are saved in this browser.</p>
 
-                <div class="cta-row">
-                    <a class="primary-btn" id="subscribe-link" href="https://www.youtube.com/@DEVELOPSAND_CHEATS" target="_blank" rel="noreferrer">Subscribe on YouTube</a>
-                    <button class="claim-btn" id="claim-button" type="button" disabled>I've subscribed — claim 10 credits</button>
-                </div>
-                <p class="claim-status" id="claim-status" role="status" aria-live="polite">Open YouTube first, then come back here to claim.</p>
-                <p class="claim-note">This demo saves one claim per browser. It cannot independently verify YouTube subscriptions.</p>
+                <section class="tasks" aria-labelledby="tasks-title">
+                    <div class="tasks-heading">
+                        <div>
+                            <p class="eyebrow">earn rewards</p>
+                            <h2 id="tasks-title">Tasks to do</h2>
+                        </div>
+                        <span class="tasks-total" id="tasks-total">0 / 3 done</span>
+                    </div>
 
-                <div class="stats">
-                    <div class="stat-card">
-                        <strong>10</strong>
-                        <span>starter credits</span>
-                    </div>
-                    <div class="stat-card">
-                        <strong>24/7</strong>
-                        <span>claim window</span>
-                    </div>
-                    <div class="stat-card">
-                        <strong>0$</strong>
-                        <span>cost to start</span>
-                    </div>
-                </div>
+                    <article class="task-card" data-task="subscribe">
+                        <div class="task-icon" aria-hidden="true">▶</div>
+                        <div class="task-info">
+                            <h3>Subscribe to the channel</h3>
+                            <p>Visit our YouTube channel and subscribe.</p>
+                            <a class="task-link" id="subscribe-link" href="https://www.youtube.com/@DEVELOPSAND_CHEATS" target="_blank" rel="noreferrer">Open YouTube</a>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+10 credits</span>
+                            <button class="claim-btn" data-claim="subscribe" type="button" disabled>Claim</button>
+                        </div>
+                    </article>
+
+                    <article class="task-card" data-task="watch">
+                        <div class="task-icon" aria-hidden="true">▷</div>
+                        <div class="task-info">
+                            <h3>Watch a channel video</h3>
+                            <p>Choose and watch a video from the channel.</p>
+                            <a class="task-link" id="watch-link" href="https://www.youtube.com/@DEVELOPSAND_CHEATS" target="_blank" rel="noreferrer">Browse videos</a>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+5 credits</span>
+                            <button class="claim-btn" data-claim="watch" type="button" disabled>Claim</button>
+                        </div>
+                    </article>
+
+                    <article class="task-card" data-task="checkin">
+                        <div class="task-icon" aria-hidden="true">✦</div>
+                        <div class="task-info">
+                            <h3>Daily check-in</h3>
+                            <p>Come back each day to collect a little bonus.</p>
+                        </div>
+                        <div class="task-action">
+                            <span class="task-reward">+2 credits</span>
+                            <button class="claim-btn" data-claim="checkin" type="button">Claim</button>
+                        </div>
+                    </article>
+                </section>
+                <p class="claim-status" id="claim-status" role="status" aria-live="polite">Complete tasks to add credits to your balance.</p>
+                <p class="claim-note">Task completion is self-reported and stored in this browser only. It cannot verify subscriptions or watched videos.</p>
             </div>
 
             <div class="visual-panel" aria-hidden="true">
