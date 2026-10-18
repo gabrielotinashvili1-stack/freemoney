@@ -253,11 +253,6 @@ h1 span {
     line-height: 1.5;
 }
 
-.secure-note {
-    color: var(--muted);
-    font-size: 0.9rem;
-}
-
 .stats {
     display: flex;
     flex-wrap: wrap;
